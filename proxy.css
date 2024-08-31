@@ -1,0 +1,77 @@
+#proxy-console {
+  flex: 1;
+  padding: 20px;
+  margin: 20px;
+  max-width: calc(100% - 30px);
+  height: 100vh;
+  background-color: #22272E;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#main-area {
+  display: flex;
+  justify-content: column;
+  align-items: center;
+}
+
+#proxy-menu,
+#proxy-options {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 0 15px 0;
+}
+  
+
+#proxy-menu {
+  background-color: #22272E;
+  color: #fff;
+  width: 30%;
+  padding: 20px;
+  height: calc(75vh - 30px);
+  overflow-y: auto;
+  margin: 15px 0 15px 0;
+  border-radius: 12px;
+}
+
+#proxy-options {
+  background-color: #22272E;
+  color: #fff;
+  width: 30%;
+  padding: 20px;
+  height: calc(25vh - 30px);
+  border-radius: 12px;
+}
+
+.proxy-button {
+  margin: 5px 0 5px 0;
+  border-radius: 12px;
+  background-color: #1C2128;
+  width: auto;
+  color: #fff;
+  border: none;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  padding: 15px;
+  height: auto;
+  font-size: 1.7em;
+  font-weight: 750;
+}
+
+.proxy-button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 768px) {
+  #proxy-menu,
+  #proxy-options {
+    width: 100%;
+    height: auto;
+  }
+  
+  #main-area {
+    flex-direction: column;
+  }
+}
